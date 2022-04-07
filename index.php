@@ -1,6 +1,6 @@
 <?php
 // fonction permet de scanner une dossier et d'afficher son contenue sur la page d' accueil 
-$scanPage = scandir('/page');
+$scanPage = scandir('page/');
 if (isset($_GET['page']) and !empty($_GET['page']) && in_array($_GET['page'] . '.php', $scanPage)) {
      $page = $_GET['page'];
 } else {
@@ -18,6 +18,13 @@ if (isset($_GET['page']) and !empty($_GET['page']) && in_array($_GET['page'] . '
 </head>
 
 <body>
+     <a href="index.php?page=test">test</a>
+     <a href="index.php?page=accueil">accueil</a>
+     <section>
+          <?php
+          include('page/' . $page . '.php');
+          ?>
+     </section>
 
 </body>
 
