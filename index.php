@@ -1,3 +1,12 @@
+<?php
+// fonction permet de scanner une dossier et d'afficher son contenue sur la page d' accueil 
+$scanPage = scandir('/page');
+if (isset($_GET['page']) and !empty($_GET['page']) && in_array($_GET['page'] . '.php', $scanPage)) {
+     $page = $_GET['page'];
+} else {
+     $page = 'accueil';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
