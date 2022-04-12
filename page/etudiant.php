@@ -51,6 +51,7 @@ $show = afficheEtudiant();
                          <td><?= $show[7]; ?></td>
                          <td><?= $show[8]; ?></td>
                          <td><?= $show[9]; ?></td>
+                         <td><?= $show[10]; ?></td>
                     </tr>
                     <?php
                }
@@ -74,6 +75,7 @@ $show = afficheEtudiant();
                               <td><?= $resultat[7]; ?></td>
                               <td><?= $resultat[8]; ?></td>
                               <td><?= $resultat[9]; ?></td>
+                              <td><?= $resultat[10]; ?></td>
                          </tr>
                <?php
                     }
@@ -94,6 +96,7 @@ $show = afficheEtudiant();
                     <td><?= $result[7]; ?></td>
                     <td><?= $result[8]; ?></td>
                     <td><?= $result[9]; ?></td>
+                    <td><?= $result[10]; ?></td>
                </tr>
      <?php
           }

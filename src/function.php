@@ -52,7 +52,7 @@ function rechGlobalEtudiant($rech)
 {
      global $db;
      $req = $db->query('SELECT * FROM students ORDER BY id DESC');
-     $req = $db->query('SELECT * FROM students WHERE CONCAT(name,lastname,matricule,adress,contact,class) LIKE "%' . $rech . '%" ORDER BY id DESC');
+     $req = $db->query('SELECT * FROM students WHERE CONCAT(name,lastname,matricule,adress,contact,class,absence) LIKE "%' . $rech . '%" ORDER BY id DESC');
      $globale = $req->fetchAll();
      return $globale;
 }
