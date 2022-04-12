@@ -19,13 +19,17 @@ if (isset($_GET['page']) and !empty($_GET['page']) && in_array($_GET['page'] . '
 </head>
 
 <body>
-     <a href="index.php?page=test">test</a>
+     <a href="index.php?page=etudiant">etudiant</a>
      <a href="index.php?page=accueil">accueil</a>
+     <a href="index.php?page=edt">EDT</a>
      <section>
           <?php
           include('page/' . $page . '.php');
           ?>
      </section>
+     <?php
+
+     ?>
 
 </body>
 
